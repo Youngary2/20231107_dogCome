@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;}
+    .bg{
+        position: fixed;
+        left: 0;right: 0;top: 0;bottom: 0;
+        pointer-events: none;
+        z-index: -1;
+        background: url(bg.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg2{
+        position: fixed;
+        left: 0;right: 0;top: 0;bottom: 0;
+        pointer-events: none;
+        z-index: 1;
+        background: url(bg2.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .box{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        max-width: 1140px;
+        max-height: 640px;
+        padding: 8rem 6rem;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.375);
+        box-shadow: 0 0.75rem 2rem 0 rgb(0 0 0 / 10%);
+        border-radius: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.flex{
+    width: 100%;
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+</style>
+<body>
+    <div class="bg"></div>
+    <div class="bg2"></div>
+    <div class="box">
+        <h1>SFAFFORD RERRIER</h1>
+        <p>BREAKING ROUGH THE FOG</p>
+        <div class="flex">
+            <div class="left">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere architecto quaerat excepturi, iure voluptas magni explicabo ipsa dignissimos unde harum earum doloribus dolorem adipisci aspernatur eveniet soluta, officia id totam animi odio pariatur! A ea illo commodi dolore repellendus eum reprehenderit qui unde dolorum beatae ab quisquam, dicta, nesciunt eaque?</p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+            </div>
+            <div class="rigt">
+                <span>Lorem ipsum dolor sit</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
